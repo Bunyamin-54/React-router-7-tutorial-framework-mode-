@@ -97,6 +97,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+
+ export function HydrateFallback() {
+  return <div>Loading...</div>
+ }
+
+
 // The top most error boundary for the app, rendered when your app throws an error
 // For more information, see https://reactrouter.com/start/framework/route-module#errorboundary
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
