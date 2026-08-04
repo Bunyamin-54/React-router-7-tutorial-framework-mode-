@@ -98,9 +98,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 
- export function HydrateFallback() {
-  return <div>Loading...</div>
- }
+export function HydrateFallback() {
+  return (
+    <div id="loading-splash">
+      <div id="loading-splash-spinner" />
+      <p>Loading, please wait...</p>
+    </div>
+  );
+}
 
 
 // The top most error boundary for the app, rendered when your app throws an error
